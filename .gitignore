@@ -1,0 +1,14 @@
+*~
+*#
+\#*
+.#*
+\#*\#
+*.log
+.DS_Store
+Thumbs.db
+*.phptidy.php
+bin/classes/
+bin/dexedLibs/
+bin/res/
+signing/
+
