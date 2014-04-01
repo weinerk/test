@@ -32,6 +32,8 @@ public class WebViewDemo extends Activity {
 
     private Handler mHandler = new Handler();
 
+		public String KWOutput = "";
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -63,8 +65,8 @@ public class WebViewDemo extends Activity {
         public void clickOnAndroid() {
             mHandler.post(new Runnable() {
                 public void run() {
-                    mWebView.loadUrl("javascript:wave()");
-                }
+                  mWebView.loadUrl("javascript:wave('"+KWOutput+"')");
+			          }
             });
 
         }
